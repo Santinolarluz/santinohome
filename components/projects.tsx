@@ -94,9 +94,9 @@ export function Projects() {
               <div className="mt-5 flex gap-4">
                 <a
                   href={project.demo}
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-foreground"
+                  className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-foreground" target="_blank"
                 >
-                  <ExternalLink className="h-4 w-4" target="_blank"/>
+                  <ExternalLink className="h-4 w-4" />
                   {t('projects.viewDemo')}
                 </a>
               </div>
