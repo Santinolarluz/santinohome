@@ -96,7 +96,7 @@ export function Projects() {
                   href={project.demo}
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-colors hover:text-foreground" target="_blank"
                 >
-                  <ExternalLink className="h-4 w-4" />
+                  <ExternalLink className="h-4 w-4" target="_blank" />
                   {t('projects.viewDemo')}
                 </a>
               </div>
