@@ -59,13 +59,13 @@ export function Contact() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-5">
-          <Reveal className="md:col-span-3">
+        <div className="mt-12 grid items-stretch gap-8 md:grid-cols-5">
+          <Reveal className="md:col-span-3 h-full">
             <form
               onSubmit={handleSubmit}
-              className="rounded-2xl border border-border bg-card p-6 sm:p-8"
+              className="flex h-full flex-col rounded-2xl border border-border bg-card p-6 sm:p-8"
             >
-              <div className="grid gap-5">
+              <div className="flex flex-1 flex-col gap-5">
                 <div className="grid gap-2">
                   <label htmlFor="name" className="text-sm font-medium">
                     {t('contact.name')}
@@ -107,7 +107,7 @@ export function Contact() {
                 <Button
                   type="submit"
                   size="lg"
-                  className="bg-primary text-primary-foreground shadow-lg shadow-primary/25 hover:bg-primary/90"
+                  className="mt-auto bg-primary text-primary-foreground shadow-lg shadow-primary/25 hover:bg-primary/90"
                 >
                   <Send className="mr-1 h-4 w-4" />
                   {sent ? t('contact.sent') : t('contact.send')}
@@ -116,7 +116,7 @@ export function Contact() {
             </form>
           </Reveal>
 
-          <Reveal className="md:col-span-2" delay={0.15}>
+          <Reveal className="md:col-span-2 h-full" delay={0.15}>
             <div className="flex h-full flex-col justify-center rounded-2xl border border-border bg-card p-6 sm:p-8">
               <h3 className="text-lg font-semibold">{t('contact.findMe')}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
