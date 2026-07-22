@@ -41,6 +41,20 @@ const projects: {
     stack: [ 'HTML5', 'Wordpress'],
     demo: 'https://coloniaboatcharter.com/',
   },
+  {
+    titleKey: 'projects.project5.title',
+    image: '/placeholder.svg',
+    descriptionKey: 'projects.project5.description',
+    stack: ['[completar]'],
+    demo: '#',
+  },
+  {
+    titleKey: 'projects.project6.title',
+    image: '/placeholder.svg',
+    descriptionKey: 'projects.project6.description',
+    stack: ['[completar]'],
+    demo: '#',
+  },
 ]
 
 export function Projects() {
@@ -54,7 +68,7 @@ export function Projects() {
         description={t('projects.description')}
       />
 
-      <div className="mt-14 grid gap-8 md:grid-cols-2">
+      <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, i) => (
           <motion.article
             key={project.titleKey}

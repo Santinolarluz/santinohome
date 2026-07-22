@@ -48,6 +48,11 @@ const translations = {
     'skills.title': 'Mi stack de trabajo',
     'skills.description':
       'Las herramientas con las que doy vida a los proyectos, desde la interfaz hasta la base de datos.',
+    'skills.frontend': 'Frontend',
+    'skills.backend': 'Backend',
+    'skills.databases': 'Bases de datos',
+    'skills.cms': 'CMS',
+    'skills.tools': 'Herramientas',
 
     // Services
     'services.eyebrow': 'Servicios',
@@ -86,6 +91,10 @@ const translations = {
     'projects.landing.title': 'Colonia Boat Charter',
     'projects.landing.description':
       'Sitio web para alquiler y reservas de embarcaciones de lujo.',
+    'projects.project5.title': 'Nombre del proyecto 5',
+    'projects.project5.description': 'Descripción breve del proyecto.',
+    'projects.project6.title': 'Nombre del proyecto 6',
+    'projects.project6.description': 'Descripción breve del proyecto.',
 
     // Contact
     'contact.eyebrow': 'Contacto',
@@ -143,6 +152,11 @@ const translations = {
     'skills.title': 'My work stack',
     'skills.description':
       'The tools I use to bring projects to life, from the interface to the database.',
+    'skills.frontend': 'Frontend',
+    'skills.backend': 'Backend',
+    'skills.databases': 'Databases',
+    'skills.cms': 'CMS',
+    'skills.tools': 'Tools',
 
     // Services
     'services.eyebrow': 'Services',
@@ -181,6 +195,10 @@ const translations = {
     'projects.landing.title': 'Colonia Boat Charter',
     'projects.landing.description':
       'Luxury boat charter and reservation website.',
+    'projects.project5.title': 'Project 5 name',
+    'projects.project5.description': 'Short project description.',
+    'projects.project6.title': 'Project 6 name',
+    'projects.project6.description': 'Short project description.',
 
     // Contact
     'contact.eyebrow': 'Contact',

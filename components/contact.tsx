@@ -15,6 +15,7 @@ const socials: {
   href: string
 }[] = [
   { Icon: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/santino-larluz-795319249/' },
+  { Icon: SiGithub, label: 'GitHub', href: 'https://github.com/Santinolarluz' },
   { Icon: Mail, label: 'Email', href: 'mailto:santinoflash@gmail.com' },
   { Icon: SiWhatsapp, label: 'WhatsApp', href: 'https://wa.me/542235342460' },
 ]
