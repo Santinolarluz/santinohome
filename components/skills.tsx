@@ -23,8 +23,10 @@ import {
   SiCloudflare,
   SiCpanel,
   SiPlesk,
+  SiSupabase,
+  SiAirtable,
 } from 'react-icons/si'
-import { Image as ImageIcon, Waypoints } from 'lucide-react'
+import { Image as ImageIcon, Waypoints, Table } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 import { useLanguage, type TranslationKey } from '@/lib/i18n'
 
@@ -57,7 +59,12 @@ const categories: { titleKey: TranslationKey; items: Item[] }[] = [
   },
   {
     titleKey: 'skills.databases',
-    items: [{ label: 'MySQL', Icon: SiMysql, color: '#4479A1' }],
+    items: [
+      { label: 'MySQL', Icon: SiMysql, color: '#4479A1' },
+      { label: 'Supabase', Icon: SiSupabase, color: '#3FCF8E' },
+      { label: 'DataTables', Icon: Table, color: '#8B5CF6' },
+      { label: 'Airtable', Icon: SiAirtable, color: '#18BFFF' },
+    ],
   },
   {
     titleKey: 'skills.cms',
@@ -83,8 +90,8 @@ const tools: Item[] = [
 function Chip({ item }: { item: Item }) {
   const { Icon, label, color } = item
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-foreground transition-colors hover:border-primary/60 hover:bg-primary/15">
-      <Icon className="h-4 w-4 shrink-0" style={{ color }} />
+    <span className="inline-flex items-center gap-2.5 rounded-xl border border-primary/30 bg-primary/10 px-4 py-2.5 text-base font-medium text-foreground transition-colors hover:border-primary/60 hover:bg-primary/15">
+      <Icon className="h-5 w-5 shrink-0" style={{ color }} />
       {label}
     </span>
   )
@@ -114,7 +121,7 @@ export function Skills() {
             <h3 className="text-lg font-semibold text-foreground">
               {t(category.titleKey)}
             </h3>
-            <div className="mt-4 flex flex-wrap gap-2.5">
+            <div className="mt-5 flex flex-wrap gap-3">
               {category.items.map((item) => (
                 <Chip key={item.label} item={item} />
               ))}
@@ -133,7 +140,7 @@ export function Skills() {
         <h3 className="text-lg font-semibold text-foreground">
           {t('skills.tools')}
         </h3>
-        <div className="mt-4 flex flex-wrap gap-2.5">
+        <div className="mt-5 flex flex-wrap gap-3">
           {tools.map((tool) => (
             <Chip key={tool.label} item={tool} />
           ))}
