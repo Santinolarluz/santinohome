@@ -16,10 +16,10 @@ export default function Page() {
         <AnimatedBackground />
         <Navbar />
         <Hero />
+        <Projects />
         <About />
         <Skills />
         <Services />
-        <Projects />
         <Contact />
         <Footer />
       </main>
