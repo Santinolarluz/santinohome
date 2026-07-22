@@ -95,10 +95,10 @@ const translations = {
     'projects.landing.title': 'Colonia Boat Charter',
     'projects.landing.description':
       'Sitio web para alquiler y reservas de embarcaciones de lujo.',
-    'projects.project5.title': 'Nombre del proyecto 5',
-    'projects.project5.description': 'Descripción breve del proyecto.',
-    'projects.project6.title': 'Nombre del proyecto 6',
-    'projects.project6.description': 'Descripción breve del proyecto.',
+    'projects.project5.title': 'VW Camiones y Buses',
+    'projects.project5.description': 'Plataforma de administración de productos.',
+    'projects.project6.title': 'Aston Seguros',
+    'projects.project6.description': 'Landing page de Seguros Viales',
 
     // Contact
     'contact.eyebrow': 'Contacto',
@@ -203,10 +203,10 @@ const translations = {
     'projects.landing.title': 'Colonia Boat Charter',
     'projects.landing.description':
       'Luxury boat charter and reservation website.',
-    'projects.project5.title': 'Project 5 name',
-    'projects.project5.description': 'Short project description.',
-    'projects.project6.title': 'Project 6 name',
-    'projects.project6.description': 'Short project description.',
+    'projects.project5.title': 'VW Trucks & Buses',
+    'projects.project5.description': 'Product management platform.',
+    'projects.project6.title': 'Aston Seguros',
+    'projects.project6.description': 'Road Insurance Landing Page',
 
     // Contact
     'contact.eyebrow': 'Contact',

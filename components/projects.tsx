@@ -43,17 +43,17 @@ const projects: {
   },
   {
     titleKey: 'projects.project5.title',
-    image: '/placeholder.svg',
+    image: '/vw.jpg',
     descriptionKey: 'projects.project5.description',
-    stack: ['[completar]'],
-    demo: '#',
+    stack: ['PHP','Laravel', 'MySQL',],
+    demo: 'https://vwcamionesybuses.com.ar/',
   },
   {
     titleKey: 'projects.project6.title',
-    image: '/placeholder.svg',
+    image: '/aston.jpg',
     descriptionKey: 'projects.project6.description',
-    stack: ['[completar]'],
-    demo: '#',
+    stack: ['Wordpress'],
+    demo: 'https://astonseguros.com.ar/',
   },
 ]
 
