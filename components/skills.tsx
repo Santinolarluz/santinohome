@@ -1,42 +1,90 @@
 'use client'
 
+import type { ComponentType } from 'react'
 import { motion } from 'framer-motion'
+import {
+  SiHtml5,
+  SiCss,
+  SiTailwindcss,
+  SiBootstrap,
+  SiJavascript,
+  SiReact,
+  SiPhp,
+  SiLaravel,
+  SiNodedotjs,
+  SiMysql,
+  SiWordpress,
+  SiWoocommerce,
+  SiElementor,
+  SiGit,
+  SiGithub,
+  SiFigma,
+  SiVercel,
+  SiCloudflare,
+  SiCpanel,
+  SiPlesk,
+} from 'react-icons/si'
+import { Image as ImageIcon, Waypoints } from 'lucide-react'
 import { SectionHeading } from '@/components/section-heading'
 import { useLanguage, type TranslationKey } from '@/lib/i18n'
 
-const categories: { titleKey: TranslationKey; items: string[] }[] = [
+type Item = {
+  label: string
+  Icon: ComponentType<{ className?: string; style?: React.CSSProperties }>
+  color: string
+}
+
+const categories: { titleKey: TranslationKey; items: Item[] }[] = [
   {
     titleKey: 'skills.frontend',
-    items: ['HTML5', 'CSS3', 'Tailwind', 'Bootstrap', 'JavaScript', 'React'],
+    items: [
+      { label: 'HTML5', Icon: SiHtml5, color: '#E34F26' },
+      { label: 'CSS3', Icon: SiCss, color: '#663399' },
+      { label: 'Tailwind', Icon: SiTailwindcss, color: '#06B6D4' },
+      { label: 'Bootstrap', Icon: SiBootstrap, color: '#7952B3' },
+      { label: 'JavaScript', Icon: SiJavascript, color: '#F7DF1E' },
+      { label: 'React', Icon: SiReact, color: '#61DAFB' },
+    ],
   },
   {
     titleKey: 'skills.backend',
-    items: ['PHP', 'Laravel', 'Node.js', 'REST API'],
+    items: [
+      { label: 'PHP', Icon: SiPhp, color: '#777BB4' },
+      { label: 'Laravel', Icon: SiLaravel, color: '#FF2D20' },
+      { label: 'Node.js', Icon: SiNodedotjs, color: '#5FA04E' },
+      { label: 'REST API', Icon: Waypoints, color: '#8B5CF6' },
+    ],
   },
   {
     titleKey: 'skills.databases',
-    items: ['MySQL'],
+    items: [{ label: 'MySQL', Icon: SiMysql, color: '#4479A1' }],
   },
   {
     titleKey: 'skills.cms',
-    items: ['WordPress', 'WooCommerce', 'Elementor'],
+    items: [
+      { label: 'WordPress', Icon: SiWordpress, color: '#21759B' },
+      { label: 'WooCommerce', Icon: SiWoocommerce, color: '#96588A' },
+      { label: 'Elementor', Icon: SiElementor, color: '#92003B' },
+    ],
   },
 ]
 
-const tools: string[] = [
-  'Git',
-  'GitHub',
-  'Figma',
-  'Vercel',
-  'Cloudflare',
-  'cPanel',
-  'Plesk',
-  'Photoshop',
+const tools: Item[] = [
+  { label: 'Git', Icon: SiGit, color: '#F05032' },
+  { label: 'GitHub', Icon: SiGithub, color: '#F5F5F5' },
+  { label: 'Figma', Icon: SiFigma, color: '#F24E1E' },
+  { label: 'Vercel', Icon: SiVercel, color: '#F5F5F5' },
+  { label: 'Cloudflare', Icon: SiCloudflare, color: '#F38020' },
+  { label: 'cPanel', Icon: SiCpanel, color: '#FF6C2C' },
+  { label: 'Plesk', Icon: SiPlesk, color: '#52BBE6' },
+  { label: 'Photoshop', Icon: ImageIcon, color: '#31A8FF' },
 ]
 
-function Chip({ label }: { label: string }) {
+function Chip({ item }: { item: Item }) {
+  const { Icon, label, color } = item
   return (
-    <span className="rounded-full border border-primary/30 bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary transition-colors hover:border-primary/60 hover:bg-primary/15">
+    <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-foreground transition-colors hover:border-primary/60 hover:bg-primary/15">
+      <Icon className="h-4 w-4 shrink-0" style={{ color }} />
       {label}
     </span>
   )
@@ -68,7 +116,7 @@ export function Skills() {
             </h3>
             <div className="mt-4 flex flex-wrap gap-2.5">
               {category.items.map((item) => (
-                <Chip key={item} label={item} />
+                <Chip key={item.label} item={item} />
               ))}
             </div>
           </motion.div>
@@ -87,7 +135,7 @@ export function Skills() {
         </h3>
         <div className="mt-4 flex flex-wrap gap-2.5">
           {tools.map((tool) => (
-            <Chip key={tool} label={tool} />
+            <Chip key={tool.label} item={tool} />
           ))}
         </div>
       </motion.div>
