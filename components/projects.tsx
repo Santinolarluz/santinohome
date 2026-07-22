@@ -13,49 +13,49 @@ const projects: {
   stack: string[]
   demo: string
 }[] = [
-  {
-    titleKey: 'projects.ecommerce.title',
-    image: '/bookedkit.jpg',
-    descriptionKey: 'projects.ecommerce.description',
-    stack: ['React', 'PHP', 'MySQL'],
-    demo: 'https://www.bookedkit.com/',
-  },
-  {
-    titleKey: 'projects.dashboard.title',
-    image: '/romeo.jpg',
-    descriptionKey: 'projects.dashboard.description',
-    stack: ['HTML5', 'PHP'],
-    demo: 'https://romeososa.com/',
-  },
-  {
-    titleKey: 'projects.blog.title',
-    image: '/enfasis.jpg',
-    descriptionKey: 'projects.blog.description',
-    stack: ['Laravel', 'MySQL', 'PHP', 'CSS'],
-    demo: 'https://www.enfasissalud.com.ar/',
-  },
-  {
-    titleKey: 'projects.landing.title',
-    image: '/colonian-boat.jpg',
-    descriptionKey: 'projects.landing.description',
-    stack: [ 'HTML5', 'Wordpress'],
-    demo: 'https://coloniaboatcharter.com/',
-  },
-  {
-    titleKey: 'projects.project5.title',
-    image: '/vw.jpg',
-    descriptionKey: 'projects.project5.description',
-    stack: ['PHP','Laravel', 'MySQL',],
-    demo: 'https://vwcamionesybuses.com.ar/',
-  },
-  {
-    titleKey: 'projects.project6.title',
-    image: '/aston.jpg',
-    descriptionKey: 'projects.project6.description',
-    stack: ['Wordpress'],
-    demo: 'https://astonseguros.com.ar/',
-  },
-]
+    {
+      titleKey: 'projects.ecommerce.title',
+      image: '/bookedkit.jpg',
+      descriptionKey: 'projects.ecommerce.description',
+      stack: ['React', 'PHP', 'MySQL'],
+      demo: 'https://www.bookedkit.com/',
+    },
+    {
+      titleKey: 'projects.dashboard.title',
+      image: '/romeo.jpg',
+      descriptionKey: 'projects.dashboard.description',
+      stack: ['HTML5', 'PHP'],
+      demo: 'https://romeososa.com/',
+    },
+    {
+      titleKey: 'projects.blog.title',
+      image: '/enfasis.jpg',
+      descriptionKey: 'projects.blog.description',
+      stack: ['Laravel', 'MySQL', 'PHP', 'CSS'],
+      demo: 'https://www.enfasissalud.com.ar/',
+    },
+    {
+      titleKey: 'projects.landing.title',
+      image: '/colonian-boat.jpg',
+      descriptionKey: 'projects.landing.description',
+      stack: ['HTML5', 'Wordpress'],
+      demo: 'https://coloniaboatcharter.com/',
+    },
+    {
+      titleKey: 'projects.project5.title',
+      image: '/vw.jpg',
+      descriptionKey: 'projects.project5.description',
+      stack: ['PHP', 'Laravel', 'MySQL',],
+      demo: 'https://vwcamionesybuses.com.ar/',
+    },
+    {
+      titleKey: 'projects.project6.title',
+      image: '/aston.jpg',
+      descriptionKey: 'projects.project6.description',
+      stack: ['Wordpress'],
+      demo: 'https://astonseguros.com.ar/',
+    },
+  ]
 
 export function Projects() {
   const { t } = useLanguage()
