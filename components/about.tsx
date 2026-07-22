@@ -4,9 +4,9 @@ import { Reveal } from '@/components/reveal'
 import { useLanguage, type TranslationKey } from '@/lib/i18n'
 
 const stats: { value: string; labelKey: TranslationKey }[] = [
-  { value: '22', labelKey: 'about.stat.years' },
-  { value: '8+', labelKey: 'about.stat.technologies' },
-  { value: '100%', labelKey: 'about.stat.commitment' },
+  { value: '3+', labelKey: 'about.stat.years' },
+  { value: '15+', labelKey: 'about.stat.projects' },
+  { value: 'C1', labelKey: 'about.stat.english' },
 ]
 
 export function About() {
@@ -26,6 +26,9 @@ export function About() {
         </p>
         <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
           {t('about.p2')}
+        </p>
+        <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+          {t('about.p3')}
         </p>
 
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
