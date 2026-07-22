@@ -37,8 +37,12 @@ const translations = {
     'about.p1':
       'Tengo 22 años y desde muy joven encontré en la programación la forma perfecta de combinar lógica y creatividad. Me especializo en el desarrollo Full Stack, trabajando tanto en interfaces cuidadas con React como en backends sólidos con Laravel y PHP.',
     'about.p2':
-      'Disfruto resolver problemas reales, aprender constantemente y entregar productos que se sientan tan bien como se ven. Cada proyecto es una oportunidad para superar el anterior.',
-    'about.stat.years': 'Años',
+      'Llevo más de 3 años trabajando para una empresa española desarrollando webs, habiendo entregado más de 15 proyectos. Disfruto resolver problemas reales, aprender constantemente y entregar productos que se sientan tan bien como se ven.',
+    'about.p3':
+      'Además, cuento con un nivel de inglés C1 avanzado, lo que me permite trabajar con equipos y clientes internacionales sin barreras.',
+    'about.stat.years': 'Años de experiencia',
+    'about.stat.projects': 'Proyectos entregados',
+    'about.stat.english': 'Inglés avanzado',
     'about.stat.technologies': 'Tecnologías',
     'about.stat.commitment': 'Compromiso',
     'about.imageAlt': 'Retrato de Santino Larluz, desarrollador Full Stack',
@@ -48,6 +52,11 @@ const translations = {
     'skills.title': 'Mi stack de trabajo',
     'skills.description':
       'Las herramientas con las que doy vida a los proyectos, desde la interfaz hasta la base de datos.',
+    'skills.frontend': 'Frontend',
+    'skills.backend': 'Backend',
+    'skills.databases': 'Bases de datos',
+    'skills.cms': 'CMS',
+    'skills.tools': 'Herramientas',
 
     // Services
     'services.eyebrow': 'Servicios',
@@ -86,6 +95,10 @@ const translations = {
     'projects.landing.title': 'Colonia Boat Charter',
     'projects.landing.description':
       'Sitio web para alquiler y reservas de embarcaciones de lujo.',
+    'projects.project5.title': 'Nombre del proyecto 5',
+    'projects.project5.description': 'Descripción breve del proyecto.',
+    'projects.project6.title': 'Nombre del proyecto 6',
+    'projects.project6.description': 'Descripción breve del proyecto.',
 
     // Contact
     'contact.eyebrow': 'Contacto',
@@ -132,8 +145,12 @@ const translations = {
     'about.p1':
       "I'm 22 years old and from a very young age I found in programming the perfect way to combine logic and creativity. I specialize in Full Stack development, working on polished interfaces with React as well as solid backends with Laravel and PHP.",
     'about.p2':
-      'I enjoy solving real problems, constantly learning, and delivering products that feel as good as they look. Every project is an opportunity to outdo the last one.',
-    'about.stat.years': 'Years old',
+      "I've spent over 3 years working for a Spanish company building websites, having delivered more than 15 projects. I enjoy solving real problems, constantly learning, and delivering products that feel as good as they look.",
+    'about.p3':
+      'I also have an advanced C1 level of English, which lets me work with international teams and clients without barriers.',
+    'about.stat.years': 'Years of experience',
+    'about.stat.projects': 'Projects delivered',
+    'about.stat.english': 'Advanced English',
     'about.stat.technologies': 'Technologies',
     'about.stat.commitment': 'Commitment',
     'about.imageAlt': 'Portrait of Santino Larluz, Full Stack developer',
@@ -143,6 +160,11 @@ const translations = {
     'skills.title': 'My work stack',
     'skills.description':
       'The tools I use to bring projects to life, from the interface to the database.',
+    'skills.frontend': 'Frontend',
+    'skills.backend': 'Backend',
+    'skills.databases': 'Databases',
+    'skills.cms': 'CMS',
+    'skills.tools': 'Tools',
 
     // Services
     'services.eyebrow': 'Services',
@@ -181,6 +203,10 @@ const translations = {
     'projects.landing.title': 'Colonia Boat Charter',
     'projects.landing.description':
       'Luxury boat charter and reservation website.',
+    'projects.project5.title': 'Project 5 name',
+    'projects.project5.description': 'Short project description.',
+    'projects.project6.title': 'Project 6 name',
+    'projects.project6.description': 'Short project description.',
 
     // Contact
     'contact.eyebrow': 'Contact',
