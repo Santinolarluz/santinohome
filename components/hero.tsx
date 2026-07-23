@@ -69,7 +69,7 @@ export function Hero() {
               <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-               href={language === 'es' ? '/Santino_Larluz_CV_ES.docx' : '/Santino_Larluz_CV_EN.docx'}
+               href={language === 'es' ? '/Santino_Larluz_CV_ES.pdf' : '/Santino_Larluz_CV_EN.pdf'}
               download
               className={cn(
                 buttonVariants({ size: 'lg', variant: 'outline' }),
